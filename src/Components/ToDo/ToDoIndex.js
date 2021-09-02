@@ -49,7 +49,7 @@ class ToDoList extends Component {
               <ul>
                 {this.state.list.map(item => (
                 <li key={item}>{item} &nbsp;
-                  <button className="delete" onClick={() => this.removeItem(item)}>Finished</button>
+                  <button className="delete" onClick={() => this.removeItem(item)}>Finished!</button>
                 </li>))}
               </ul>
               </section>
@@ -60,7 +60,7 @@ class ToDoList extends Component {
                     type="text"
                     className="input"
                     id="addInput"
-                    placeholder="To Do List"
+                    placeholder="To-Do List"
                   />
                   <button className="button is-info" onClick={this.addItem}>
                 Add Task
